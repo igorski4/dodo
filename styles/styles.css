@@ -206,7 +206,7 @@ html {
 .telephone__text {
   font-weight: 400;
   font-size: 15px;
-  line-height: 20px;
+  line-height: 20.46px;
   color: #999999;
   text-align: right;
 }
@@ -297,6 +297,10 @@ html {
   gap: 60px 20px;
 }
 
+main > section:last-child {
+  padding-bottom: 70px;
+}
+
 .grid-card {
   display: flex;
   flex-direction: column;
@@ -316,7 +320,6 @@ html {
 }
 .grid-card__text {
   margin-bottom: 11px;
-  height: 57px;
   flex-grow: 1;
   font-weight: 400;
   font-size: 14px;
@@ -331,6 +334,15 @@ html {
 }
 .grid-card__text_type_snacks {
   width: 235px;
+  margin-bottom: 20px;
+}
+.grid-card__text_type_desserts {
+  width: 235px;
+  margin-bottom: 20px;
+}
+.grid-card__text_type_drinks {
+  width: 235px;
+  margin-bottom: 20px;
 }
 
 .grid-card-footer {
@@ -355,4 +367,27 @@ html {
   color: #FFFFFF;
   background: #F96900;
   border-radius: 1000px;
+}
+
+.footer {
+  padding-top: 50px;
+  padding-bottom: 36px;
+  background-color: #464C55;
+}
+.footer__grid {
+  display: grid;
+  grid-template-columns: 180px 180px 180px 244px 276px;
+  grid-template-rows: 289px 122px;
+}
+
+.grid > p {
+  border: 1px solid black;
+}
+
+.grid > p:nth-child(6) {
+  grid-column: span 2;
+}
+
+.grid > p:nth-child(7) {
+  grid-column: span 2;
 }/*# sourceMappingURL=styles.css.map */

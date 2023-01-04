@@ -30,9 +30,9 @@
           <div class="navbar__list list">
             <a class="list__link" href="#pizza">Пицца</a>
             <a class="list__link" href="#combo">Комбо</a>
-            <a class="list__link" href="">Закуски</a>
-            <a class="list__link" href="">Десерты</a>
-            <a class="list__link" href="">Напитки</a>
+            <a class="list__link" href="snacks">Закуски</a>
+            <a class="list__link" href="desserts">Десерты</a>
+            <a class="list__link" href="drinks">Напитки</a>
             <a class="list__link" href="">Другие товары</a>
           </div>
           <button class="navbar__button">Корзина</button>
@@ -134,7 +134,7 @@
               />
               <h3 class="grid-card__title">Пицца из половинок</h3>
               <p class="grid-card__text grid-card__text_type_pizza">
-                Соберите свою пиццу 35 см с двумя разными вкусами
+                Соберите свою пиццу 35 см с&nbspдвумя разными вкусами
               </p>
               <div class="grid-card__grid-card-footer grid-card-footer">
                 <p class="grid-card-footer__price">от 600 ₽</p>
@@ -493,10 +493,8 @@
                 "
                 alt="Spicy Dodster"
               />
-              <h3 class="grid-card__title grid-card__text_type_snacks">
-                Острый Додстер
-              </h3>
-              <p class="grid-card__text">
+              <h3 class="grid-card__title">Острый Додстер</h3>
+              <p class="grid-card__text grid-card__text_type_snacks">
                 Горячая закуска с острым цыпленком, перцем халапеньо, солеными
                 огурчиками, томатами, моцареллой и соусом барбекю в тонкой
                 пшеничной лепешке
@@ -533,7 +531,247 @@
           </div>
         </div>
       </section>
+
+      <!-- DESSERTS -->
+      <section class="grid" id="desserts">
+        <div class="container">
+          <h2 class="grid__title">Десерты</h2>
+          <div class="grid__grid-list grid-list">
+            <!-- Apple pie -->
+            <div class="grid-list__grid-card grid-card">
+              <img
+                class="grid-card__img"
+                srcset="
+                  ./images/dessert/dessert-1.jpg    1x,
+                  ./images/dessert/dessert-1-2x.jpg 2x
+                "
+                alt="Apple pie"
+              />
+              <h3 class="grid-card__title">Яблочный пирог</h3>
+              <p class="grid-card__text grid-card__text_type_desserts">
+                Десерт из песочного теста с яблочной начинкой. Может содержать
+                изюм
+              </p>
+              <div class="grid-card__grid-card-footer grid-card-footer">
+                <p class="grid-card-footer__price">99 ₽</p>
+                <button class="grid-card-footer__button" type="submit">
+                  В корзину
+                </button>
+              </div>
+            </div>
+            <!-- Cheesecake New York -->
+            <div class="grid-list__grid-card grid-card">
+              <img
+                class="grid-card__img"
+                srcset="
+                  ./images/dessert/dessert-2.jpg    1x,
+                  ./images/dessert/dessert-2-2x.jpg 2x
+                "
+                alt="Cheesecake New York"
+              />
+              <h3 class="grid-card__title">Чизкейк Нью-Йорк</h3>
+              <p class="grid-card__text grid-card__text_type_desserts">
+                Классический американский творожный десерт
+              </p>
+              <div class="grid-card__grid-card-footer grid-card-footer">
+                <p class="grid-card-footer__price">149 ₽</p>
+                <button class="grid-card-footer__button" type="submit">
+                  В корзину
+                </button>
+              </div>
+            </div>
+            <!-- Fondanas, 2 pcs -->
+            <div class="grid-list__grid-card grid-card">
+              <img
+                class="grid-card__img"
+                srcset="
+                  ./images/dessert/dessert-3.jpg    1x,
+                  ./images/dessert/dessert-3-2x.jpg 2x
+                "
+                alt="Fondanas, 2 pcs"
+              />
+              <h3 class="grid-card__title">Фонданы, 2 шт</h3>
+              <p class="grid-card__text grid-card__text_type_desserts">
+                Два десерта с хрустящей корочкой&nbspи&nbspтоплёной
+                шоколадной&nbspначинкой
+              </p>
+              <div class="grid-card__grid-card-footer grid-card-footer">
+                <p class="grid-card-footer__price">159 ₽</p>
+                <button class="grid-card-footer__button" type="submit">
+                  В корзину
+                </button>
+              </div>
+            </div>
+            <!-- Oreo milkshake -->
+            <div class="grid-list__grid-card grid-card">
+              <img
+                class="grid-card__img"
+                srcset="
+                  ./images/dessert/dessert-4.jpg    1x,
+                  ./images/dessert/dessert-4-2x.jpg 2x
+                "
+                alt="Oreo milkshake"
+              />
+              <h3 class="grid-card__title">
+                Молочный коктейль с печеньем Орео
+              </h3>
+              <p class="grid-card__text grid-card__text_type_desserts">
+                Напиток из молока и мороженого с добавлением дробленого печенья
+                «Орео»
+              </p>
+              <div class="grid-card__grid-card-footer grid-card-footer">
+                <p class="grid-card-footer__price">159 ₽</p>
+                <button class="grid-card-footer__button" type="submit">
+                  В корзину
+                </button>
+              </div>
+            </div>
+            <!-- Classic milkshake -->
+            <div class="grid-list__grid-card grid-card">
+              <img
+                class="grid-card__img"
+                srcset="
+                  ./images/dessert/dessert-5.jpg    1x,
+                  ./images/dessert/dessert-5-2x.jpg 2x
+                "
+                alt="Classic milkshake"
+              />
+              <h3 class="grid-card__title">Классический молочный коктейль</h3>
+              <p class="grid-card__text grid-card__text_type_desserts">
+                Напиток из молока и мороженого
+              </p>
+              <div class="grid-card__grid-card-footer grid-card-footer">
+                <p class="grid-card-footer__price">159 ₽</p>
+                <button class="grid-card-footer__button" type="submit">
+                  В корзину
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- DRINKS -->
+      <section class="grid" id="drinks">
+        <div class="container">
+          <h2 class="grid__title">Напитки</h2>
+          <div class="grid__grid-list grid-list">
+            <!-- 2 Coca-Cola at a super price -->
+            <div class="grid-list__grid-card grid-card">
+              <img
+                class="grid-card__img"
+                srcset="
+                  ./images/drink/drink-1.jpg    1x,
+                  ./images/drink/drink-1-2x.jpg 2x
+                "
+                alt="2 Coca-Cola at a super price"
+              />
+              <h3 class="grid-card__title">2 Coca-Cola по суперцене</h3>
+              <p class="grid-card__text grid-card__text_type_drinks">
+                Две классические Coca-Cola по 0,5 литров по выгодной цене, 0,5 л
+              </p>
+              <div class="grid-card__grid-card-footer grid-card-footer">
+                <p class="grid-card-footer__price">99 ₽</p>
+                <button class="grid-card-footer__button" type="submit">
+                  В корзину
+                </button>
+              </div>
+            </div>
+            <!-- Coca-Cola Orange -->
+            <div class="grid-list__grid-card grid-card">
+              <img
+                class="grid-card__img"
+                srcset="
+                  ./images/drink/drink-2.jpg    1x,
+                  ./images/drink/drink-2-2x.jpg 2x
+                "
+                alt="Coca-Cola Orange"
+              />
+              <h3 class="grid-card__title">Coca-Cola Orange</h3>
+              <p class="grid-card__text grid-card__text_type_drinks">0,5 л</p>
+              <div class="grid-card__grid-card-footer grid-card-footer">
+                <p class="grid-card-footer__price">149 ₽</p>
+                <button class="grid-card-footer__button" type="submit">
+                  В корзину
+                </button>
+              </div>
+            </div>
+            <!-- Coca-Cola Zero -->
+            <div class="grid-list__grid-card grid-card">
+              <img
+                class="grid-card__img"
+                srcset="
+                  ./images/drink/drink-3.jpg    1x,
+                  ./images/drink/drink-3-2x.jpg 2x
+                "
+                alt="Coca-Cola Zero"
+              />
+              <h3 class="grid-card__title">Coca-Cola Zero</h3>
+              <p class="grid-card__text grid-card__text_type_drinks">0,5 л</p>
+              <div class="grid-card__grid-card-footer grid-card-footer">
+                <p class="grid-card-footer__price">159 ₽</p>
+                <button class="grid-card-footer__button" type="submit">
+                  В корзину
+                </button>
+              </div>
+            </div>
+            <!-- Coca-Cola -->
+            <div class="grid-list__grid-card grid-card">
+              <img
+                class="grid-card__img"
+                srcset="
+                  ./images/drink/drink-4.jpg    1x,
+                  ./images/drink/drink-4-2x.jpg 2x
+                "
+                alt="Coca-Cola"
+              />
+              <h3 class="grid-card__title">Coca-Cola</h3>
+              <p class="grid-card__text grid-card__text_type_drinks">0,5 л</p>
+              <div class="grid-card__grid-card-footer grid-card-footer">
+                <p class="grid-card-footer__price">159 ₽</p>
+                <button class="grid-card-footer__button" type="submit">
+                  В корзину
+                </button>
+              </div>
+            </div>
+            <!-- Coca-Cola Vanilla -->
+            <div class="grid-list__grid-card grid-card">
+              <img
+                class="grid-card__img"
+                srcset="
+                  ./images/drink/drink-5.jpg    1x,
+                  ./images/drink/drink-5-2x.jpg 2x
+                "
+                alt="Coca-Cola Vanilla"
+              />
+              <h3 class="grid-card__title">Coca-Cola Vanilla</h3>
+              <p class="grid-card__text grid-card__text_type_drinks">0,5 л</p>
+              <div class="grid-card__grid-card-footer grid-card-footer">
+                <p class="grid-card-footer__price">159 ₽</p>
+                <button class="grid-card-footer__button" type="submit">
+                  В корзину
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer></footer>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__grid grid">
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
