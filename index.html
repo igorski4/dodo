@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>Dodo pizza</title>
+  </head>
+  <body>
+    <!-- MENU -->
+    <header class="menu">
+      <div class="container">
+        <div class="menu__header header">
+          <img class="header__logo" src="./images/logo.svg" alt="Logo" />
+          <div class="header__title title">
+            <img
+              class="title__logo"
+              src="./images/title.svg"
+              alt="Dodo pizza"
+            />
+            <p class="title__text">Сеть пиццерий №1 в России</p>
+          </div>
+          <div class="header__telephone telephone">
+            <p class="telephone__number">8 800 302-00-60</p>
+            <p class="telephone__text">Звонок бесплатный</p>
+          </div>
+        </div>
+        <div class="menu__navbar navbar">
+          <div class="navbar__list list">
+            <a class="list__link" href="#pizza">Пицца</a>
+            <a class="list__link" href="#combo">Комбо</a>
+            <a class="list__link" href="">Закуски</a>
+            <a class="list__link" href="">Десерты</a>
+            <a class="list__link" href="">Напитки</a>
+            <a class="list__link" href="">Другие товары</a>
+          </div>
+          <button class="navbar__button">Корзина</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- SLIDER -->
+      <section class="slider">
+        <div class="container container-slider">
+          <img
+            class="container-slider__img"
+            src="./images/slider.jpg"
+            alt="slider"
+          />
+        </div>
+      </section>
+
+      <!-- NEW PRODUCTS -->
+      <section class="new-products">
+        <div class="container">
+          <h2 class="new-products__title">Новое и популярное</h2>
+          <div class="new-products__list list">
+            <div class="list__item item">
+              <img
+                class="item__img"
+                srcset="
+                  ./images/new-products/new-1.jpg    1x,
+                  ./images/new-products/new-1-2x.jpg 2x
+                "
+                alt="Caesar"
+              />
+              <div class="item__text text">
+                <p class="text__title">Цезарь</p>
+                <p class="text__price">от 445 ₽</p>
+              </div>
+            </div>
+            <div class="list__item item">
+              <img
+                class="item__img"
+                srcset="
+                  ./images/new-products/new-2.jpg    1x,
+                  ./images/new-products/new-2-2x.jpg 2x
+                "
+                alt="Tender salmon"
+              />
+              <div class="item__text text">
+                <p class="text__title">Нежный лосось</p>
+                <p class="text__price">от 495 ₽</p>
+              </div>
+            </div>
+            <div class="list__item item">
+              <img
+                class="item__img"
+                srcset="
+                  ./images/new-products/new-3.jpg    1x,
+                  ./images/new-products/new-3-2x.jpg 2x
+                "
+                alt="2 pizzas"
+              />
+              <div class="item__text text">
+                <p class="text__title">2 пиццы</p>
+                <p class="text__price">899 ₽</p>
+              </div>
+            </div>
+            <div class="list__item item">
+              <img
+                class="item__img"
+                srcset="
+                  ./images/new-products/new-4.jpg    1x,
+                  ./images/new-products/new-4-2x.jpg 2x
+                "
+                alt="Carbonara"
+              />
+              <div class="item__text text">
+                <p class="text__title">Карбонара</p>
+                <p class="text__price">от 395 ₽</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PIZZA -->
+      <section class="grid" id="pizza">
+        <div class="container">
+          <h2 class="grid__title">Пицца</h2>
+          <div class="grid__grid-list grid-list">
+            <!-- Pizza from halves -->
+            <div class="grid-list__grid-card grid-card">
+              <img
+                class="grid-card__img"
+                srcset="
+                  ./images/pizza/pizza-1.jpg    1x,
+                  ./images/pizza/pizza-1-2x.jpg 2x
+                "
+                alt="Pizza from halves"
+              />
+              <h3 class="grid-card__title">Пицца из половинок</h3>
+              <p class="grid-card__text grid-card__text_type_pizza">
+                Соберите свою пиццу 35 см с двумя разными вкусами
+              </p>
+              <div class="grid-card__grid-card-footer grid-card-footer">
+                <p class="grid-card-footer__price">от 600 ₽</p>
+                <button class="grid-card-footer__button" type="submit">
+                  Собрать
+                </button>
+              </div>
+            </div>
+            <!-- Pepperoni heart -->
+            <div class="grid-list__grid-card grid-card">
+              <img
+                class="grid-card__img"
+                srcset="
+                  ./images/pizza/pizza-2.jpg    1x,
+                  ./images/pizza/pizza-2-2x.jpg 2x
+                "
+                alt="Pepperoni heart"
+              />
+              <h3 class="grid-card__title">Пепперони-сердце</h3>
+              <p class="grid-card__text grid-card__text_type_pizza">
+                Пикантная пепперони, моцарелла, томатный соус
+              </p>
+              <div class="grid-card__grid-card-footer grid-card-footer">
+                <p class="grid-card-footer__price">от 625 ₽</p>
+                <button class="grid-card-footer__button" type="submit">
+                  Собрать
+                </button>
+              </div>
+            </div>
+            <!-- Heart pie -->
+            <div class="grid-list__grid-card grid-card">
+              <img
+                class="grid-card__img"
+                srcset="
+                  ./images/pizza/pizza-3.jpg    1x,
+                  ./images/pizza/pizza-3-2x.jpg 2x
+                "
+                alt="Heart pie"
+              />
+              <h3 class="grid-card__title">Пирог-сердце</h3>
+              <p class="grid-card__text grid-card__text_type_pizza">
+                Ананасы, брусника, сгущенное молоко
+              </p>
+              <div class="grid-card__grid-card-footer grid-card-footer">
+                <p class="grid-card-footer__price">от 625 ₽</p>
+                <button class="grid-card-footer__button" type="submit">
+                  Собрать
+                </button>
+              </div>
+            </div>
+            <!-- Chizzy cheddar -->
+            <div class="grid-list__grid-card grid-card">
+              <img
+                class="grid-card__img"
+                srcset="
+                  ./images/pizza/pizza-4.jpg    1x,
+                  ./images/pizza/pizza-4-2x.jpg 2x
+                "
+                alt="Chizzy cheddar"
+              />
+              <h3 class="grid-card__title">Чиззи чеддер</h3>
+              <p class="grid-card__text grid-card__text_type_pizza">
+                Ветчина, сыр чеддер, сладкий перец, моцарелла, томатный соус,
+                чеснок, итальянские травы
+              </p>
+              <div class="grid-card__grid-card-footer grid-card-footer">
+                <p class="grid-card-footer__price">от 625 ₽</p>
+                <button class="grid-card-footer__button" type="submit">
+                  Собрать
+                </button>
+              </div>
+            </div>
+            <!-- Blue cheese chicken -->
+            <div class="grid-list__grid-card grid-card">
+              <img
+                class="grid-card__img"
+                srcset="
+                  ./images/pizza/pizza-5.jpg    1x,
+                  ./images/pizza/pizza-5-2x.jpg 2x
+                "
+                alt="Blue cheese chicken"
+              />
+              <h3 class="grid-card__title">Цыпленок блю чиз</h3>
+              <p class="grid-card__text grid-card__text_type_pizza">
+                Цыпленок, сыр блю чиз, томаты, моцарелла, соус альфредо
+              </p>
+              <div class="grid-card__grid-card-footer grid-card-footer">
+                <p class="grid-card-footer__price">от 445 ₽</p>
+                <button class="grid-card-footer__button" type="submit">
+                  Собрать
+                </button>
+              </div>
+            </div>
+            <!-- Tender salmon -->
+            <div class="grid-list__grid-card grid-card">
+              <img
+                class="grid-card__img"
+                srcset="
+                  ./images/pizza/pizza-6.jpg    1x,
+                  ./images/pizza/pizza-6-2x.jpg 2x
+                "
+                alt="Tender salmon"
+              />
+              <h3 class="grid-card__title">Нежный лосось</h3>
+              <p class="grid-card__text grid-card__text_type_pizza">
+                Лосось, томаты черри, соус песто, моцарелла, соус альфредо
+              </p>
+              <div class="grid-card__grid-card-footer grid-card-footer">
+                <p class="grid-card-footer__price">от 495 ₽</p>
+                <button class="grid-card-footer__button" type="submit">
+                  Собрать
+                </button>
+              </div>
+            </div>
+            <!-- Cheese -->
+            <div class="grid-list__grid-card grid-card">
+              <img
+                class="grid-card__img"
+                srcset="
+                  ./images/pizza/pizza-7.jpg    1x,
+                  ./images/pizza/pizza-7-2x.jpg 2x
+                "
+                alt="Cheese"
+              />
+              <h3 class="grid-card__title">Сырная</h3>
+              <p class="grid-card__text grid-card__text_type_pizza">
+                Увеличенная порция моцареллы, сыры чеддер и пармезан, соус
+                альфредо
+              </p>
+              <div class="grid-card__grid-card-footer grid-card-footer">
+                <p class="grid-card-footer__price">от 245 ₽</p>
+                <button class="grid-card-footer__button" type="submit">
+                  Собрать
+                </button>
+              </div>
+            </div>
+            <!-- Pepperoni fresh -->
+            <div class="grid-list__grid-card grid-card">
+              <img
+                class="grid-card__img"
+                srcset="
+                  ./images/pizza/pizza-8.jpg    1x,
+                  ./images/pizza/pizza-8-2x.jpg 2x
+                "
+                alt="Pepperoni fresh"
+              />
+              <h3 class="grid-card__title">Пепперони фреш</h3>
+              <p class="grid-card__text grid-card__text_type_pizza">
+                Пикантная пепперони, увеличенная порция моцареллы, томаты,
+                томатный соус
+              </p>
+              <div class="grid-card__grid-card-footer grid-card-footer">
+                <p class="grid-card-footer__price">от 245 ₽</p>
+                <button class="grid-card-footer__button" type="submit">
+                  Собрать
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- COMBO -->
+      <section class="grid" id="combo">
+        <div class="container">
+          <h2 class="grid__title">Комбо</h2>
+          <div class="grid__grid-list grid-list">
+            <!-- Combo for 599 ₽ -->
+            <div class="grid-list__grid-card grid-card">
+              <img
+                class="grid-card__img"
+                srcset="
+                  ./images/combo/combo-1.jpg    1x,
+                  ./images/combo/combo-1-2x.jpg 2x
+                "
+                alt="Combo for 599 ₽"
+              />
+              <h3 class="grid-card__title">Комбо за 599 ₽</h3>
+              <p class="grid-card__text grid-card__text_type_combo">
+                Наш хит «Аррива!» или другая пицца 25 см, Додстер, напиток и
+                соус.
+              </p>
+              <div class="grid-card__grid-card-footer grid-card-footer">
+                <p class="grid-card-footer__price">599 ₽</p>
+                <button class="grid-card-footer__button" type="submit">
+                  Собрать
+                </button>
+              </div>
+            </div>
+            <!-- 2 pizzas -->
+            <div class="grid-list__grid-card grid-card">
+              <img
+                class="grid-card__img"
+                srcset="
+                  ./images/combo/combo-2.jpg    1x,
+                  ./images/combo/combo-2-2x.jpg 2x
+                "
+                alt="2 pizzas"
+              />
+              <h3 class="grid-card__title">2 пиццы</h3>
+              <p class="grid-card__text grid-card__text_type_combo">
+                Самое популярное комбо из 2 пицц 30 см. Большой выбор
+              </p>
+              <div class="grid-card__grid-card-footer grid-card-footer">
+                <p class="grid-card-footer__price">899 ₽</p>
+                <button class="grid-card-footer__button" type="submit">
+                  Собрать
+                </button>
+              </div>
+            </div>
+            <!-- 2 pizzas and a snack -->
+            <div class="grid-list__grid-card grid-card">
+              <img
+                class="grid-card__img"
+                srcset="
+                  ./images/combo/combo-3.jpg    1x,
+                  ./images/combo/combo-3-2x.jpg 2x
+                "
+                alt="2 pizzas and a snacks"
+              />
+              <h3 class="grid-card__title">2 пиццы и закуска</h3>
+              <p class="grid-card__text grid-card__text_type_combo">
+                2 пиццы 25 см и закуска на выбор. Для компании из 2–4 человек
+              </p>
+              <div class="grid-card__grid-card-footer grid-card-footer">
+                <p class="grid-card-footer__price">799 ₽</p>
+                <button class="grid-card-footer__button" type="submit">
+                  Собрать
+                </button>
+              </div>
+            </div>
+            <!-- Pizza and 2 snacks -->
+            <div class="grid-list__grid-card grid-card">
+              <img
+                class="grid-card__img"
+                srcset="
+                  ./images/combo/combo-4.jpg    1x,
+                  ./images/combo/combo-4-2x.jpg 2x
+                "
+                alt="Pizza and 2 snacks"
+              />
+              <h3 class="grid-card__title">Пицца и 2 закуски</h3>
+              <p class="grid-card__text grid-card__text_type_combo">
+                Пицца 30 см и 2 закуски на выбор. Для компании из 2–4 человек
+              </p>
+              <div class="grid-card__grid-card-footer grid-card-footer">
+                <p class="grid-card-footer__price">799 ₽</p>
+                <button class="grid-card-footer__button" type="submit">
+                  Собрать
+                </button>
+              </div>
+            </div>
+            <!-- Combo for 999 ₽ -->
+            <div class="grid-list__grid-card grid-card">
+              <img
+                class="grid-card__img"
+                srcset="
+                  ./images/combo/combo-5.jpg    1x,
+                  ./images/combo/combo-5-2x.jpg 2x
+                "
+                alt="Combo for 999 ₽"
+              />
+              <h3 class="grid-card__title">Комбо за 999 ₽</h3>
+              <p class="grid-card__text grid-card__text_type_combo">
+                3 пиццы 30 см на тонком тесте по суперцене. Выбор пицц ограничен
+              </p>
+              <div class="grid-card__grid-card-footer grid-card-footer">
+                <p class="grid-card-footer__price">999 ₽</p>
+                <button class="grid-card-footer__button" type="submit">
+                  Собрать
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SNACKS -->
+      <section class="grid" id="snacks">
+        <div class="container">
+          <h2 class="grid__title">Комбо</h2>
+          <div class="grid__grid-list grid-list">
+            <!-- Tomato soup with croutons -->
+            <div class="grid-list__grid-card grid-card">
+              <img
+                class="grid-card__img"
+                srcset="
+                  ./images/snack/snack-1.jpg    1x,
+                  ./images/snack/snack-1-2x.jpg 2x
+                "
+                alt="Tomato soup with croutons"
+              />
+              <h3 class="grid-card__title">Томатный суп с гренками</h3>
+              <p class="grid-card__text grid-card__text_type_snacks">
+                Горячий суп с пшеничными гренками на основе фирменного соуса из
+                итальянских томатов
+              </p>
+              <div class="grid-card__grid-card-footer grid-card-footer">
+                <p class="grid-card-footer__price">99 ₽</p>
+                <button class="grid-card-footer__button" type="submit">
+                  В корзину
+                </button>
+              </div>
+            </div>
+            <!-- Tomato soup with meatballs -->
+            <div class="grid-list__grid-card grid-card">
+              <img
+                class="grid-card__img"
+                srcset="
+                  ./images/snack/snack-2.jpg    1x,
+                  ./images/snack/snack-2-2x.jpg 2x
+                "
+                alt="Tomato soup with meatballs"
+              />
+              <h3 class="grid-card__title">Томатный суп с митболами</h3>
+              <p class="grid-card__text grid-card__text_type_snacks">
+                Горячий суп c митболами из говядины и маслинами на основе
+                фирменного соуса из итальянских томатов
+              </p>
+              <div class="grid-card__grid-card-footer grid-card-footer">
+                <p class="grid-card-footer__price">149 ₽</p>
+                <button class="grid-card-footer__button" type="submit">
+                  В корзину
+                </button>
+              </div>
+            </div>
+            <!-- Dodster -->
+            <div class="grid-list__grid-card grid-card">
+              <img
+                class="grid-card__img"
+                srcset="
+                  ./images/snack/snack-3.jpg    1x,
+                  ./images/snack/snack-3-2x.jpg 2x
+                "
+                alt="Dodster"
+              />
+              <h3 class="grid-card__title">Додстер</h3>
+              <p class="grid-card__text grid-card__text_type_snacks">
+                Легендарная горячая закуска с цыпленком, томатами, моцареллой,
+                соусом ранч в тонкой пшеничной лепешке
+              </p>
+              <div class="grid-card__grid-card-footer grid-card-footer">
+                <p class="grid-card-footer__price">159 ₽</p>
+                <button class="grid-card-footer__button" type="submit">
+                  В корзину
+                </button>
+              </div>
+            </div>
+            <!-- Spicy Dodster -->
+            <div class="grid-list__grid-card grid-card">
+              <img
+                class="grid-card__img"
+                srcset="
+                  ./images/snack/snack-4.jpg    1x,
+                  ./images/snack/snack-4-2x.jpg 2x
+                "
+                alt="Spicy Dodster"
+              />
+              <h3 class="grid-card__title grid-card__text_type_snacks">
+                Острый Додстер
+              </h3>
+              <p class="grid-card__text">
+                Горячая закуска с острым цыпленком, перцем халапеньо, солеными
+                огурчиками, томатами, моцареллой и соусом барбекю в тонкой
+                пшеничной лепешке
+              </p>
+              <div class="grid-card__grid-card-footer grid-card-footer">
+                <p class="grid-card-footer__price">159 ₽</p>
+                <button class="grid-card-footer__button" type="submit">
+                  В корзину
+                </button>
+              </div>
+            </div>
+            <!-- Dodster Chipotle -->
+            <div class="grid-list__grid-card grid-card">
+              <img
+                class="grid-card__img"
+                srcset="
+                  ./images/snack/snack-5.jpg    1x,
+                  ./images/snack/snack-5-2x.jpg 2x
+                "
+                alt="Dodster Chipotle"
+              />
+              <h3 class="grid-card__title">Додстер Чипотле</h3>
+              <p class="grid-card__text grid-card__text_type_snacks">
+                Горячая закуска с пикантным соусом чипотле из копченых перчиков,
+                цыпленком, томатами, моцареллой в тонкой пшеничной лепешке
+              </p>
+              <div class="grid-card__grid-card-footer grid-card-footer">
+                <p class="grid-card-footer__price">159 ₽</p>
+                <button class="grid-card-footer__button" type="submit">
+                  В корзину
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
