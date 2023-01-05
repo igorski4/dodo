@@ -213,7 +213,6 @@ html {
 
 .navbar__list {
   display: flex;
-  justify-content: space-between;
   gap: 24px;
 }
 .navbar__button {
@@ -376,18 +375,137 @@ main > section:last-child {
 }
 .footer__grid {
   display: grid;
-  grid-template-columns: 180px 180px 180px 244px 276px;
-  grid-template-rows: 289px 122px;
+  grid-template-columns: 180px 160px 200px 244px 276px;
+  grid-template-rows: 289px 122px 72px;
+  grid-template-areas: "dodo-pizza job partners it-is-interesting contacts" "revenue revenue number-of-pizzerias number-of-pizzerias number-of-pizzerias" "logo-and-copyright logo-and-copyright legal-information legal-information  social-media";
+  padding-top: 0;
 }
 
-.grid > p {
-  border: 1px solid black;
+.default-link-footer {
+  display: block;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #FFFFFF;
+  opacity: 0.7;
+  text-decoration: none;
 }
 
-.grid > p:nth-child(6) {
-  grid-column: span 2;
+.default-flex-footer, .grid__it-is-interesting, .grid__partners, .grid__job, .grid__dodo-pizza {
+  display: flex;
+  flex-direction: column;
+  gap: 10px 0;
 }
 
-.grid > p:nth-child(7) {
-  grid-column: span 2;
+.grid__dodo-pizza {
+  grid-area: dodo-pizza;
+}
+.grid__job {
+  grid-area: job;
+}
+.grid__partners {
+  grid-area: partners;
+  padding-left: 20px;
+}
+.grid__it-is-interesting {
+  grid-area: it-is-interesting;
+}
+.grid__contacts {
+  grid-area: contacts;
+}
+.grid__revenue {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  grid-area: revenue;
+}
+.grid__number-of-pizzerias {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-left: 115px;
+  padding-right: 364px;
+  grid-area: number-of-pizzerias;
+}
+.grid__logo-and-copyright {
+  padding-top: 46px;
+  grid-area: logo-and-copyright;
+}
+.grid__legal-information {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 46px;
+  grid-area: legal-information;
+}
+.grid__social-media {
+  display: flex;
+  gap: 0 6px;
+  justify-content: flex-end;
+  padding-top: 40px;
+  grid-area: social-media;
+}
+
+.dodo-pizza__title, .revenue__number, .number-of-pizzerias__number, .contacts__telephone, .it-is-interesting__title, .partners__title, .job__title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+.dodo-pizza__link, .it-is-interesting__link, .partners__link, .job__link {
+  display: block;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #FFFFFF;
+  opacity: 0.7;
+  text-decoration: none;
+}
+
+.job {
+  max-width: 147px;
+}
+.it-is-interesting {
+  max-width: 166px;
+}
+.contacts__img {
+  display: inline-block;
+  margin-bottom: 29px;
+}
+.contacts__telephone {
+  margin-bottom: 6px;
+  font-size: 26px;
+  text-align: right;
+}
+.contacts__text, .contacts__email {
+  margin-bottom: 26px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: right;
+  color: #FFFFFF;
+  opacity: 0.5;
+}
+.contacts__email {
+  opacity: 0.9;
+}
+
+.revenue__number, .number-of-pizzerias__number {
+  margin-bottom: 12px;
+  font-size: 26px;
+}
+.revenue__text, .legal-information__link, .logo-and-copyright__copyright, .number-of-pizzerias__text {
+  max-width: 299px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+  opacity: 0.7;
+}
+
+.logo-and-copyright__logo {
+  display: inline-block;
+  margin-right: 28.39px;
+}
+.logo-and-copyright__copyright {
+  display: inline-block;
+}
+
+.legal-information__link {
+  text-decoration: none;
 }/*# sourceMappingURL=styles.css.map */

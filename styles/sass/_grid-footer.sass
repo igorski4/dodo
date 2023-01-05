@@ -4,14 +4,155 @@
   background-color: #464C55
   &__grid
     display: grid
-    grid-template-columns:180px 180px 180px 244px 276px
-    grid-template-rows: 289px 122px
+    grid-template-columns:180px 160px 200px 244px 276px
+    grid-template-rows: 289px 122px 72px
+    grid-template-areas: "dodo-pizza job partners it-is-interesting contacts" "revenue revenue number-of-pizzerias number-of-pizzerias number-of-pizzerias" "logo-and-copyright logo-and-copyright legal-information legal-information  social-media"
+    padding-top: 0
 
-.grid>p
-  border: 1px solid black
+.default-link-footer
+  display: block
 
-.grid>p:nth-child(6)
-  grid-column: span 2
+  font-weight: 400
+  font-size: 18px
+  line-height: 26px
+  color: #FFFFFF
+  opacity: 0.7
 
-.grid>p:nth-child(7)
-  grid-column: span 2
+  text-decoration: none
+
+.default-flex-footer
+  display: flex
+  flex-direction: column
+  gap: 10px 0
+ 
+.grid
+  &__dodo-pizza
+    @extend .default-flex-footer
+    grid-area: dodo-pizza
+  &__job
+    @extend .default-flex-footer
+    grid-area: job
+  &__partners
+    @extend .default-flex-footer
+    grid-area: partners
+    padding-left: 20px
+  &__it-is-interesting
+    @extend .default-flex-footer
+    grid-area: it-is-interesting
+  &__contacts
+    grid-area: contacts
+  &__revenue
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2)
+    grid-area: revenue
+  &__number-of-pizzerias
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2)
+    padding-left: 115px
+    padding-right: 364px
+    grid-area: number-of-pizzerias
+  &__logo-and-copyright
+    padding-top: 46px
+    grid-area: logo-and-copyright
+  &__legal-information
+    display: flex
+    justify-content: space-between
+    padding-top: 46px
+    grid-area: legal-information
+  &__social-media
+    display: flex
+    gap: 0 6px
+    justify-content: flex-end
+    padding-top: 40px
+    grid-area: social-media
+
+.dodo-pizza
+  &__title
+    font-weight: 600
+    font-size: 18px
+    line-height: 26px
+    color: #FFFFFF
+  &__link
+    display: block
+
+    font-weight: 400
+    font-size: 18px
+    line-height: 26px
+    color: #FFFFFF
+    opacity: 0.7
+
+    text-decoration: none
+
+.job
+  max-width: 147px
+  &__title
+    @extend .dodo-pizza__title
+  &__link
+    @extend .dodo-pizza__link
+  
+.partners
+  &__title
+    @extend .dodo-pizza__title
+  &__link
+    @extend .dodo-pizza__link
+
+.it-is-interesting
+  max-width: 166px
+  &__title
+    @extend .dodo-pizza__title
+  &__link
+    @extend .dodo-pizza__link
+
+.contacts
+  &__img
+    display: inline-block
+    margin-bottom: 29px
+  &__telephone
+    @extend .dodo-pizza__title
+    margin-bottom: 6px
+
+    font-size: 26px
+    text-align: right
+  &__text
+    margin-bottom: 26px
+
+    font-weight: 400
+    font-size: 15px
+    line-height: 20px
+    text-align: right
+    color: #FFFFFF
+    opacity: 0.5
+  &__email
+    @extend .contacts__text
+    opacity: 0.9
+
+.revenue
+  &__number
+    @extend .dodo-pizza__title
+    margin-bottom: 12px
+
+    font-size: 26px
+  &__text
+    max-width: 299px
+    font-weight: 400
+    font-size: 16px
+    line-height: 22px
+    color: #FFFFFF
+    opacity: 0.7
+
+.number-of-pizzerias
+  &__number
+    @extend .revenue__number
+  &__text
+    @extend .revenue__text
+
+.logo-and-copyright
+  &__logo
+    display: inline-block
+    margin-right: 28.39px
+  &__copyright
+    display: inline-block
+    @extend .revenue__text
+
+.legal-information
+  &__link
+    @extend .revenue__text
+    text-decoration: none
