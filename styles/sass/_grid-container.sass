@@ -22,6 +22,8 @@ main>section:last-child
     padding-left: 15px
     padding-right: 15px
     margin-bottom: 5px
+  &__img:hover
+    transform: translateY(5px)
   &__title
     margin-bottom: 10px
     max-width: 201px
@@ -32,7 +34,7 @@ main>section:last-child
     color: #000000
   &__text
     margin-bottom: 11px
-    flex-grow:1
+    flex-grow: 1
 
     font-weight: 400
     font-size: 14px
@@ -71,7 +73,29 @@ main>section:last-child
     font-size: 16px
     line-height: 22px
     text-align: center
-    color: #FFFFFF
 
-    background: #F96900
     border-radius: 1000px
+
+  &__button_type_primary
+    color: #FFFFFF
+    background: #F96900
+    transition: all 0.25s
+
+  &__button_type_primary:hover
+    background: #ED5D08
+
+  &__button_type_primary:active
+    color: #fcbc8e
+    background: #F96900
+
+  &__button_type_secondary
+    color: #D15700
+    background: #FFF0E6
+    transition: all 0.25s
+
+  &__button_type_secondary:hover
+    color: #D55406
+    background: #FFD0B2
+
+  &__button_type_secondary:active
+    opacity: 0.6

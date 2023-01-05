@@ -8,36 +8,22 @@
     grid-template-rows: 289px 122px 72px
     grid-template-areas: "dodo-pizza job partners it-is-interesting contacts" "revenue revenue number-of-pizzerias number-of-pizzerias number-of-pizzerias" "logo-and-copyright logo-and-copyright legal-information legal-information  social-media"
     padding-top: 0
-
-.default-link-footer
-  display: block
-
-  font-weight: 400
-  font-size: 18px
-  line-height: 26px
-  color: #FFFFFF
-  opacity: 0.7
-
-  text-decoration: none
-
-.default-flex-footer
-  display: flex
-  flex-direction: column
-  gap: 10px 0
  
 .grid
   &__dodo-pizza
-    @extend .default-flex-footer
+    display: flex
+    flex-direction: column
+    gap: 10px 0
     grid-area: dodo-pizza
   &__job
-    @extend .default-flex-footer
+    @extend .grid__dodo-pizza
     grid-area: job
   &__partners
-    @extend .default-flex-footer
+    @extend .grid__dodo-pizza
     grid-area: partners
     padding-left: 20px
   &__it-is-interesting
-    @extend .default-flex-footer
+    @extend .grid__dodo-pizza
     grid-area: it-is-interesting
   &__contacts
     grid-area: contacts
@@ -80,6 +66,10 @@
     opacity: 0.7
 
     text-decoration: none
+  &__link:hover
+    opacity: 1
+  &__link:active
+    font-weight: 600
 
 .job
   max-width: 147px
@@ -107,10 +97,13 @@
     margin-bottom: 29px
   &__telephone
     @extend .dodo-pizza__title
+
+    display: block
     margin-bottom: 6px
 
     font-size: 26px
     text-align: right
+    text-decoration: none
   &__text
     margin-bottom: 26px
 
@@ -122,7 +115,11 @@
     opacity: 0.5
   &__email
     @extend .contacts__text
+
+    display: block
+
     opacity: 0.9
+    text-decoration: none
 
 .revenue
   &__number
@@ -142,14 +139,6 @@
   &__number
     @extend .revenue__number
   &__text
-    @extend .revenue__text
-
-.logo-and-copyright
-  &__logo
-    display: inline-block
-    margin-right: 28.39px
-  &__copyright
-    display: inline-block
     @extend .revenue__text
 
 .legal-information

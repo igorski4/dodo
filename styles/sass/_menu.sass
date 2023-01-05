@@ -31,6 +31,7 @@
     font-size: 18px
     line-height: 25px
     color: #000000
+    text-decoration: none
   &__text
     font-weight: 400
     font-size: 15px
@@ -53,7 +54,15 @@
     color: #FFFFFF
 
     background: #F96900
-    border-radius: 1000px 
+    border-radius: 1000px
+
+  &__button:hover
+    background: #ED5D08
+
+  &__button:active
+    color: #fcbc8e
+    background: #F96900
+
 
 .list
   &__link
@@ -64,3 +73,10 @@
     line-height: 19px
     color: #000000
     text-decoration: none
+  &__link:hover
+    color: #F96900
+    transition: color 0.25s
+  &__link:active
+    transition: 0.25s
+    transform: scale(1.05, 1.05)
+    font-weight: 600

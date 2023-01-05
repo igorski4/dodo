@@ -202,6 +202,7 @@ html {
   font-size: 18px;
   line-height: 25px;
   color: #000000;
+  text-decoration: none;
 }
 .telephone__text {
   font-weight: 400;
@@ -226,6 +227,13 @@ html {
   background: #F96900;
   border-radius: 1000px;
 }
+.navbar__button:hover {
+  background: #ED5D08;
+}
+.navbar__button:active {
+  color: #fcbc8e;
+  background: #F96900;
+}
 
 .list__link {
   padding-top: 10px;
@@ -235,9 +243,23 @@ html {
   color: #000000;
   text-decoration: none;
 }
+.list__link:hover {
+  color: #F96900;
+  transition: color 0.25s;
+}
+.list__link:active {
+  transition: 0.25s;
+  transform: scale(1.05, 1.05);
+  font-weight: 600;
+}
 
 .container-slider {
   padding-bottom: 70px;
+}
+
+.container-slider__img {
+  filter: drop-shadow(0px 5px 20px rgba(115, 121, 140, 0.15));
+  border-radius: 20px;
 }
 
 .new-products__title {
@@ -260,6 +282,9 @@ html {
   display: flex;
   box-shadow: 0px 6px 25px rgba(6, 5, 50, 0.05);
   border-radius: 10px;
+}
+.list__item:hover {
+  box-shadow: 0px 0px 15px rgba(6, 5, 50, 0.05);
 }
 
 .item__img {
@@ -308,6 +333,9 @@ main > section:last-child {
   padding-left: 15px;
   padding-right: 15px;
   margin-bottom: 5px;
+}
+.grid-card__img:hover {
+  transform: translateY(5px);
 }
 .grid-card__title {
   margin-bottom: 10px;
@@ -363,9 +391,31 @@ main > section:last-child {
   font-size: 16px;
   line-height: 22px;
   text-align: center;
+  border-radius: 1000px;
+}
+.grid-card-footer__button_type_primary {
   color: #FFFFFF;
   background: #F96900;
-  border-radius: 1000px;
+  transition: all 0.25s;
+}
+.grid-card-footer__button_type_primary:hover {
+  background: #ED5D08;
+}
+.grid-card-footer__button_type_primary:active {
+  color: #fcbc8e;
+  background: #F96900;
+}
+.grid-card-footer__button_type_secondary {
+  color: #D15700;
+  background: #FFF0E6;
+  transition: all 0.25s;
+}
+.grid-card-footer__button_type_secondary:hover {
+  color: #D55406;
+  background: #FFD0B2;
+}
+.grid-card-footer__button_type_secondary:active {
+  opacity: 0.6;
 }
 
 .footer {
@@ -381,23 +431,10 @@ main > section:last-child {
   padding-top: 0;
 }
 
-.default-link-footer {
-  display: block;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 26px;
-  color: #FFFFFF;
-  opacity: 0.7;
-  text-decoration: none;
-}
-
-.default-flex-footer, .grid__it-is-interesting, .grid__partners, .grid__job, .grid__dodo-pizza {
+.grid__dodo-pizza, .grid__it-is-interesting, .grid__partners, .grid__job {
   display: flex;
   flex-direction: column;
   gap: 10px 0;
-}
-
-.grid__dodo-pizza {
   grid-area: dodo-pizza;
 }
 .grid__job {
@@ -456,6 +493,12 @@ main > section:last-child {
   opacity: 0.7;
   text-decoration: none;
 }
+.dodo-pizza__link:hover, .it-is-interesting__link:hover, .partners__link:hover, .job__link:hover {
+  opacity: 1;
+}
+.dodo-pizza__link:active, .it-is-interesting__link:active, .partners__link:active, .job__link:active {
+  font-weight: 600;
+}
 
 .job {
   max-width: 147px;
@@ -468,9 +511,11 @@ main > section:last-child {
   margin-bottom: 29px;
 }
 .contacts__telephone {
+  display: block;
   margin-bottom: 6px;
   font-size: 26px;
   text-align: right;
+  text-decoration: none;
 }
 .contacts__text, .contacts__email {
   margin-bottom: 26px;
@@ -482,28 +527,22 @@ main > section:last-child {
   opacity: 0.5;
 }
 .contacts__email {
+  display: block;
   opacity: 0.9;
+  text-decoration: none;
 }
 
 .revenue__number, .number-of-pizzerias__number {
   margin-bottom: 12px;
   font-size: 26px;
 }
-.revenue__text, .legal-information__link, .logo-and-copyright__copyright, .number-of-pizzerias__text {
+.revenue__text, .legal-information__link, .number-of-pizzerias__text {
   max-width: 299px;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
   color: #FFFFFF;
   opacity: 0.7;
-}
-
-.logo-and-copyright__logo {
-  display: inline-block;
-  margin-right: 28.39px;
-}
-.logo-and-copyright__copyright {
-  display: inline-block;
 }
 
 .legal-information__link {
