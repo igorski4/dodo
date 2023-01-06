@@ -8,8 +8,9 @@
     color: #000000
   &__grid-list
     display: grid
-    grid-template-columns: repeat(4, 1fr)
-    grid-template-rows: repeat(2, 1fr)
+    grid-template-columns: repeat(auto-fit, 250px)
+    grid-template-rows: repeat(auto-fill, 1fr)
+    justify-content: center
     gap: 60px 20px
 
 main>section:last-child
@@ -33,7 +34,7 @@ main>section:last-child
     line-height: 27px
     color: #000000
   &__text
-    margin-bottom: 11px
+    margin-bottom: 20px
     flex-grow: 1
 
     font-weight: 400
@@ -46,13 +47,10 @@ main>section:last-child
     width: 235px
   &__text_type_snacks
     width: 235px
-    margin-bottom: 20px
   &__text_type_desserts
     width: 235px
-    margin-bottom: 20px
   &__text_type_drinks
     width: 235px
-    margin-bottom: 20px
 
 .grid-card-footer
   display: flex

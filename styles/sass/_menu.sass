@@ -10,10 +10,11 @@
 .header
   display: flex
   justify-content: space-between
-  &__logo
-  &__title
-    flex-basis: 80%
+  &__left
+    display: flex
+    column-gap: 14.67px
   &__telephone
+
 
 .title
   &__logo
@@ -80,3 +81,18 @@
     transition: 0.25s
     transform: scale(1.05, 1.05)
     font-weight: 600
+
+@media (max-width: 768px)
+  .title__text, .telephone, .navbar
+    display: none
+  .title__logo
+    height: 14.04px
+    padding: 0
+    margin: 0 auto
+  .left__logo
+    width: 22.5px
+    height: 23px
+  .left
+    align-items: center
+  .menu__header
+    margin: 0

@@ -26,6 +26,8 @@
     @extend .grid__dodo-pizza
     grid-area: it-is-interesting
   &__contacts
+    display: flex
+    flex-direction: column
     grid-area: contacts
   &__revenue
     border-bottom: 1px solid rgba(255, 255, 255, 0.2)
@@ -92,8 +94,9 @@
     @extend .dodo-pizza__link
 
 .contacts
-  &__img
-    display: inline-block
+  &__market
+    display: flex
+    justify-content: center
     margin-bottom: 29px
   &__telephone
     @extend .dodo-pizza__title
@@ -114,10 +117,14 @@
     color: #FFFFFF
     opacity: 0.5
   &__email
-    @extend .contacts__text
-
     display: block
+    margin-bottom: 26px
 
+    font-weight: 400
+    font-size: 15px
+    line-height: 20px
+    text-align: right
+    color: #FFFFFF
     opacity: 0.9
     text-decoration: none
 
@@ -145,3 +152,86 @@
   &__link
     @extend .revenue__text
     text-decoration: none
+
+@media (max-width: 1110px)
+  .footer__grid
+    grid-template-columns: repeat(2, 45%)
+    grid-template-rows: repeat(auto-fit, minmax(52px, 192px)) 
+    grid-template-areas: "dodo-pizza job"  "partners  it-is-interesting" "contacts social-media" "legal-information legal-information" "logo-and-copyright logo-and-copyright"
+    justify-content: center
+    justify-self: start
+  .footer
+    padding-top: 20px
+    padding-bottom: 20px
+  .grid
+    &__dodo-pizza, &__job, &__it-is-interesting
+      max-width: 100%
+      padding-left: 60px
+    &__partners, &__it-is-interesting, &__contacts, &__social-media
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1)
+    &__partners
+      padding: 0
+      padding-bottom: 20px
+      padding-left: 60px
+    &__contacts
+      flex-direction: column-reverse
+    &__revenue, &__number-of-pizzerias
+      display: none
+    &__logo-and-copyright
+      margin: 0 auto
+      padding-top: 30px
+    &__legal-information
+      justify-content: space-around
+      padding: 0
+      padding-top: 20px
+      padding-bottom: 20px
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1)
+    &__social-media
+      padding: 0
+      justify-content: center
+      align-items: center
+  .contacts
+    &__market
+      gap: 0 10px
+      margin-bottom: 20px
+    &__telephone, &__text
+      display: none
+    &__email
+      text-align: center
+      padding-top: 20px
+      margin-bottom: 20px
+  
+@media (max-width: 700px)
+  .footer__grid
+    grid-template-columns: 281px
+    grid-template-rows: repeat(auto-fill, 1fr) 
+    grid-template-areas: "dodo-pizza" "job"  "partners"  "it-is-interesting" "contacts" "social-media"  "legal-information" "logo-and-copyright"
+    justify-content: center
+    justify-self: start
+  .grid
+    &__dodo-pizza, &__job, &__partners
+      padding: 0
+      margin-bottom: 30px
+    &__partners
+      border-bottom: 0
+    &__it-is-interesting
+      padding: 0
+      margin-bottom: 0
+      padding-bottom: 19px
+      border-bottom: 0
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1)
+    &__social-media
+      justify-content: start
+      padding-bottom: 19px
+    &__contacts
+      border-bottom: 0
+    &__legal-information
+      flex-direction: column
+      gap: 10px 0
+      border-bottom: 0
+      padding-bottom: 0
+    &__logo-and-copyright
+      padding-top: 30px
+  .contacts
+    &__email
+      text-align: left

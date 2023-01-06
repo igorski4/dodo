@@ -167,6 +167,12 @@ html {
   font-family: "Nunito", "Open Sans", sans-serif;
 }
 
+@media (max-width: 1110px) {
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
 .menu {
   padding-top: 25px;
   padding-bottom: 30px;
@@ -183,8 +189,10 @@ html {
   display: flex;
   justify-content: space-between;
 }
-.header__title {
-  flex-basis: 80%;
+.header__left {
+  display: flex;
+  -moz-column-gap: 14.67px;
+       column-gap: 14.67px;
 }
 .title__logo {
   padding-top: 3px;
@@ -253,15 +261,42 @@ html {
   font-weight: 600;
 }
 
+@media (max-width: 768px) {
+  .title__text, .telephone, .navbar {
+    display: none;
+  }
+  .title__logo {
+    height: 14.04px;
+    padding: 0;
+    margin: 0 auto;
+  }
+  .left__logo {
+    width: 22.5px;
+    height: 23px;
+  }
+  .left {
+    align-items: center;
+  }
+  .menu__header {
+    margin: 0;
+  }
+}
 .container-slider {
   padding-bottom: 70px;
 }
-
 .container-slider__img {
+  width: 100%;
+  height: auto;
   filter: drop-shadow(0px 5px 20px rgba(115, 121, 140, 0.15));
   border-radius: 20px;
+  margin: 0 auto;
 }
 
+@media (max-width: 1100px) {
+  .container-slider {
+    padding: 0;
+  }
+}
 .new-products__title {
   margin-bottom: 30px;
   font-weight: 700;
@@ -304,6 +339,11 @@ html {
   color: #000000;
 }
 
+@media (max-width: 1110px) {
+  .new-products {
+    display: none;
+  }
+}
 .grid {
   padding-top: 70px;
 }
@@ -316,8 +356,9 @@ html {
 }
 .grid__grid-list {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, 250px);
+  grid-template-rows: repeat(auto-fill, 1fr);
+  justify-content: center;
   gap: 60px 20px;
 }
 
@@ -346,7 +387,7 @@ main > section:last-child {
   color: #000000;
 }
 .grid-card__text {
-  margin-bottom: 11px;
+  margin-bottom: 20px;
   flex-grow: 1;
   font-weight: 400;
   font-size: 14px;
@@ -361,15 +402,12 @@ main > section:last-child {
 }
 .grid-card__text_type_snacks {
   width: 235px;
-  margin-bottom: 20px;
 }
 .grid-card__text_type_desserts {
   width: 235px;
-  margin-bottom: 20px;
 }
 .grid-card__text_type_drinks {
   width: 235px;
-  margin-bottom: 20px;
 }
 
 .grid-card-footer {
@@ -448,6 +486,8 @@ main > section:last-child {
   grid-area: it-is-interesting;
 }
 .grid__contacts {
+  display: flex;
+  flex-direction: column;
   grid-area: contacts;
 }
 .grid__revenue {
@@ -506,8 +546,9 @@ main > section:last-child {
 .it-is-interesting {
   max-width: 166px;
 }
-.contacts__img {
-  display: inline-block;
+.contacts__market {
+  display: flex;
+  justify-content: center;
   margin-bottom: 29px;
 }
 .contacts__telephone {
@@ -517,7 +558,7 @@ main > section:last-child {
   text-align: right;
   text-decoration: none;
 }
-.contacts__text, .contacts__email {
+.contacts__text {
   margin-bottom: 26px;
   font-weight: 400;
   font-size: 15px;
@@ -528,6 +569,12 @@ main > section:last-child {
 }
 .contacts__email {
   display: block;
+  margin-bottom: 26px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: right;
+  color: #FFFFFF;
   opacity: 0.9;
   text-decoration: none;
 }
@@ -547,4 +594,106 @@ main > section:last-child {
 
 .legal-information__link {
   text-decoration: none;
+}
+
+@media (max-width: 1110px) {
+  .footer__grid {
+    grid-template-columns: repeat(2, 45%);
+    grid-template-rows: repeat(auto-fit, minmax(52px, 192px));
+    grid-template-areas: "dodo-pizza job" "partners  it-is-interesting" "contacts social-media" "legal-information legal-information" "logo-and-copyright logo-and-copyright";
+    justify-content: center;
+    justify-self: start;
+  }
+  .footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .grid__dodo-pizza, .grid__partners, .grid__job, .grid__it-is-interesting {
+    max-width: 100%;
+    padding-left: 60px;
+  }
+  .grid__partners, .grid__it-is-interesting, .grid__contacts, .grid__social-media {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .grid__partners {
+    padding: 0;
+    padding-bottom: 20px;
+    padding-left: 60px;
+  }
+  .grid__contacts {
+    flex-direction: column-reverse;
+  }
+  .grid__revenue, .grid__number-of-pizzerias {
+    display: none;
+  }
+  .grid__logo-and-copyright {
+    margin: 0 auto;
+    padding-top: 30px;
+  }
+  .grid__legal-information {
+    justify-content: space-around;
+    padding: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .grid__social-media {
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  .contacts__market {
+    gap: 0 10px;
+    margin-bottom: 20px;
+  }
+  .contacts__telephone, .contacts__text {
+    display: none;
+  }
+  .contacts__email {
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 700px) {
+  .footer__grid {
+    grid-template-columns: 281px;
+    grid-template-rows: repeat(auto-fill, 1fr);
+    grid-template-areas: "dodo-pizza" "job" "partners" "it-is-interesting" "contacts" "social-media" "legal-information" "logo-and-copyright";
+    justify-content: center;
+    justify-self: start;
+  }
+  .grid__dodo-pizza, .grid__it-is-interesting, .grid__job, .grid__partners {
+    padding: 0;
+    margin-bottom: 30px;
+  }
+  .grid__partners {
+    border-bottom: 0;
+  }
+  .grid__it-is-interesting {
+    padding: 0;
+    margin-bottom: 0;
+    padding-bottom: 19px;
+    border-bottom: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .grid__social-media {
+    justify-content: start;
+    padding-bottom: 19px;
+  }
+  .grid__contacts {
+    border-bottom: 0;
+  }
+  .grid__legal-information {
+    flex-direction: column;
+    gap: 10px 0;
+    border-bottom: 0;
+    padding-bottom: 0;
+  }
+  .grid__logo-and-copyright {
+    padding-top: 30px;
+  }
+  .contacts__email {
+    text-align: left;
+  }
 }/*# sourceMappingURL=styles.css.map */
