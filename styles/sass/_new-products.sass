@@ -10,6 +10,7 @@
     display: grid
     grid-template-columns: repeat(4, 1fr)
     gap: 20px
+    overflow-x: auto
 
 .list
   &__item
@@ -41,6 +42,22 @@
     line-height: 22px
     color: #000000
 
-@media (max-width: 1110px)
+@media (max-width: 552px)
   .new-products
-    display: none
+    padding-bottom: 30px
+    &__title
+      margin-bottom: 10px
+  .item
+    width: 240px
+    height: 108px
+    padding-top: 11px
+    padding-bottom: 11px
+    padding-left: 18px
+    &__img
+      margin-right: 8px
+      padding: 0
+      width: 86px
+      height: 86px
+  .text
+    &__title
+      padding-top: 21px

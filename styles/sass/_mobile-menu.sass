@@ -1,0 +1,31 @@
+.mobile-navbar
+  visibility: hidden
+  height: 0
+
+@media (max-width: 768px)
+  .mobile-navbar
+    visibility: visible
+    height: 31px
+    margin-top: 30px
+    margin-bottom: 20px
+    overflow-x: auto
+    &__wrapper
+      display: flex
+      gap: 0 8px
+
+  .wrapper
+    &__button
+      width: max-content
+      height: 31px
+      padding-left: 15px
+      padding-right: 15px
+      background: #F3F3F7
+      border-radius: 100px
+      font-weight: 600
+      font-size: 14px
+      line-height: 19px
+      text-align: center
+      color: #464C55
+    &__button:hover
+      background: #FFF0E6
+      color: #D15700
