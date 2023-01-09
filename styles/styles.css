@@ -319,6 +319,9 @@ html {
 .list__item {
   width: 250px;
   height: 104px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 18px;
   height: auto;
   display: flex;
   box-shadow: 0px 6px 25px rgba(6, 5, 50, 0.05);
@@ -329,10 +332,10 @@ html {
 }
 
 .item__img {
-  padding: 14px 22px 14px 18px;
+  margin-right: 22px;
 }
 .text__title {
-  padding-top: 29px;
+  padding-top: 15px;
   font-weight: 400;
   font-size: 14px;
   line-height: 19px;
@@ -351,13 +354,14 @@ html {
   }
   .new-products__title {
     margin-bottom: 10px;
+    font-size: 20px;
+    line-height: 27px;
   }
   .item {
     width: 240px;
     height: 108px;
     padding-top: 11px;
     padding-bottom: 11px;
-    padding-left: 18px;
   }
   .item__img {
     margin-right: 8px;
@@ -530,6 +534,8 @@ main > section:last-child {
   }
   .grid__title {
     margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 27px;
   }
   main > section:last-child {
     padding-bottom: 40px;
@@ -738,6 +744,9 @@ main > section:last-child {
     padding-top: 20px;
     padding-bottom: 20px;
   }
+  .grid {
+    padding-bottom: 0;
+  }
   .grid__dodo-pizza, .grid__partners, .grid__job, .grid__it-is-interesting {
     max-width: 100%;
     padding-left: 60px;
@@ -783,6 +792,16 @@ main > section:last-child {
     text-align: center;
     padding-top: 20px;
     margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .dodo-pizza__title, .job__title, .partners__title, .it-is-interesting__title, .contacts__telephone, .revenue__number, .number-of-pizzerias__number {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .dodo-pizza__link, .job__link, .partners__link, .it-is-interesting__link {
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 @media (max-width: 700px) {
