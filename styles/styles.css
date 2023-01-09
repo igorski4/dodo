@@ -315,7 +315,6 @@ html {
   gap: 20px;
   overflow-x: auto;
 }
-
 .new-products__list::-webkit-scrollbar {
   display: none;
 }
@@ -366,6 +365,7 @@ html {
     height: 108px;
     padding-top: 11px;
     padding-bottom: 11px;
+    box-shadow: 0px 6px 15px rgba(6, 5, 50, 0.05);
   }
   .item__img {
     margin-right: 8px;
@@ -394,6 +394,9 @@ html {
     margin-bottom: 8px;
     overflow-x: scroll;
   }
+  .mobile-navbar::-webkit-scrollbar {
+    display: none;
+  }
   .mobile-navbar__wrapper {
     display: flex;
     gap: 0 8px;
@@ -421,9 +424,6 @@ html {
   }
   .wrapper__button:hover {
     opacity: 0.6;
-  }
-  .mobile-navbar::-webkit-scrollbar {
-    display: none;
   }
 }
 .grid {
@@ -545,7 +545,7 @@ main > section:last-child {
 
 @media (max-width: 768px) {
   .grid {
-    padding: 0;
+    padding-top: 0;
     padding-bottom: 30px;
   }
   .grid__title {
@@ -559,7 +559,7 @@ main > section:last-child {
 }
 @media (max-width: 552px) {
   .grid {
-    padding: 0;
+    padding-top: 0;
     padding-bottom: 30px;
   }
   .grid__title {
@@ -568,6 +568,7 @@ main > section:last-child {
   .grid__grid-list {
     grid-template-columns: 288px;
     justify-content: center;
+    gap: 0;
   }
   main > section:last-child {
     padding-bottom: 40px;
@@ -575,6 +576,11 @@ main > section:last-child {
   .grid-card {
     flex-direction: row;
     padding-top: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #F3F3F7;
+  }
+  .grid-card:last-of-type {
+    border-bottom: none;
   }
   .grid-card__img {
     padding: 0;
@@ -598,14 +604,17 @@ main > section:last-child {
   .grid-card__text_type_pizza, .grid-card__text_type_combo, .grid-card__text_type_snacks, .grid-card__text_type_desserts, .grid-card__text_type_drinks {
     width: 156px;
   }
-  .grid-card-footer {
-    flex-direction: column;
-  }
   .grid-card-footer__price {
+    display: flex;
+    align-items: center;
     margin: 0;
   }
   .grid-card-footer__button {
     margin: 0;
+    width: 96px;
+    height: 32px;
+    font-size: 14px;
+    line-height: 19px;
   }
 }
 .footer {
@@ -760,7 +769,7 @@ main > section:last-child {
     padding-top: 20px;
     padding-bottom: 20px;
   }
-  .grid {
+  .footer__grid {
     padding-bottom: 0;
   }
   .grid__dodo-pizza, .grid__partners, .grid__job, .grid__it-is-interesting {

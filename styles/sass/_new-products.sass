@@ -11,9 +11,8 @@
     grid-template-columns: repeat(4, 1fr)
     gap: 20px
     overflow-x: auto
-
-.new-products__list::-webkit-scrollbar
-    display: none
+    &::-webkit-scrollbar
+      display: none
 
 .list
   &__item
@@ -61,6 +60,8 @@
     height: 108px
     padding-top: 11px
     padding-bottom: 11px
+
+    box-shadow: 0px 6px 15px rgba(6, 5, 50, 0.05)
     &__img
       margin-right: 8px
       padding: 0

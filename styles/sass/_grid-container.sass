@@ -104,7 +104,7 @@ main>section:last-child
 
 @media (max-width: 768px)
   .grid
-    padding: 0
+    padding-top: 0
     padding-bottom: 30px
     &__title
       margin-bottom: 20px
@@ -116,18 +116,23 @@ main>section:last-child
 
 @media (max-width: 552px)
   .grid
-    padding: 0
+    padding-top: 0
     padding-bottom: 30px
     &__title
       margin-bottom: 20px
     &__grid-list
       grid-template-columns: 288px
-      justify-content: center 
+      justify-content: center
+      gap: 0
   main>section:last-child
     padding-bottom: 40px 
   .grid-card
     flex-direction: row
     padding-top: 16px
+    padding-bottom: 16px
+    border-bottom: 1px solid #F3F3F7
+    &:last-of-type
+      border-bottom: none
     &__img
       padding: 0
       margin: 0
@@ -149,8 +154,14 @@ main>section:last-child
     &__text_type_pizza, &__text_type_combo, &__text_type_snacks, &__text_type_desserts, &__text_type_drinks
       width: 156px
   .grid-card-footer
-    flex-direction: column
     &__price
+      display: flex
+      align-items: center
       margin: 0
     &__button
       margin: 0
+      width: 96px
+      height: 32px
+
+      font-size: 14px
+      line-height: 19px
