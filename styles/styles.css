@@ -316,6 +316,10 @@ html {
   overflow-x: auto;
 }
 
+.new-products__list::-webkit-scrollbar {
+  display: none;
+}
+
 .list__item {
   width: 250px;
   height: 104px;
@@ -380,15 +384,21 @@ html {
 
 @media (max-width: 768px) {
   .mobile-navbar {
+    background-color: #fff;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
     visibility: visible;
-    height: 31px;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    overflow-x: auto;
+    height: 56px;
+    margin-top: 17px;
+    margin-bottom: 8px;
+    overflow-x: scroll;
   }
   .mobile-navbar__wrapper {
     display: flex;
     gap: 0 8px;
+    padding-top: 13px;
+    padding-bottom: 12px;
   }
   .wrapper__button {
     width: -webkit-max-content;
@@ -411,6 +421,9 @@ html {
   }
   .wrapper__button:hover {
     opacity: 0.6;
+  }
+  .mobile-navbar::-webkit-scrollbar {
+    display: none;
   }
 }
 .grid {

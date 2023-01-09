@@ -4,14 +4,20 @@
 
 @media (max-width: 768px)
   .mobile-navbar
+    background-color: #fff
+    position: sticky
+    top: 0
     visibility: visible
-    height: 31px
-    margin-top: 30px
-    margin-bottom: 20px
-    overflow-x: auto 
+    height: 56px
+    margin-top: 17px
+    margin-bottom: 8px
+    overflow-x: scroll
+      
     &__wrapper
       display: flex
       gap: 0 8px
+      padding-top: 13px
+      padding-bottom: 12px
 
   .wrapper
     &__button
@@ -31,3 +37,5 @@
       color: #D15700
     &__button:hover
       opacity: 0.6
+  .mobile-navbar::-webkit-scrollbar
+    display: none
