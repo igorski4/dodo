@@ -313,7 +313,7 @@ html {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
-  overflow-x: auto;
+  overflow-x: hidden;
 }
 
 .list__item {
@@ -384,7 +384,7 @@ html {
     height: 31px;
     margin-top: 30px;
     margin-bottom: 20px;
-    overflow-x: auto;
+    overflow-x: hidden;
   }
   .mobile-navbar__wrapper {
     display: flex;
@@ -408,6 +408,9 @@ html {
   .wrapper__button:hover {
     background: #FFF0E6;
     color: #D15700;
+  }
+  .wrapper__button:hover {
+    opacity: 0.6;
   }
 }
 .grid {
