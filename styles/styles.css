@@ -375,6 +375,11 @@ main > section:last-child {
   padding-right: 15px;
   margin-bottom: 5px;
 }
+.grid-card__wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
 .grid-card__img:hover {
   transform: translateY(5px);
 }
@@ -456,6 +461,47 @@ main > section:last-child {
   opacity: 0.6;
 }
 
+@media (max-width: 552px) {
+  .grid-list {
+    grid-template-columns: 288px;
+    justify-content: center;
+  }
+  .grid-card {
+    flex-direction: row;
+    padding-top: 16px;
+  }
+  .grid-card__img {
+    padding: 0;
+    margin: 0;
+    margin-right: 8px;
+    width: 115px;
+    height: 115px;
+  }
+  .grid-card__title {
+    padding-right: 6px;
+    margin-bottom: 4px;
+    width: 160px;
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .grid-card__text {
+    margin-bottom: 8px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .grid-card__text_type_pizza, .grid-card__text_type_combo, .grid-card__text_type_snacks, .grid-card__text_type_desserts, .grid-card__text_type_drinks {
+    width: 156px;
+  }
+  .grid-card-footer {
+    flex-direction: column;
+  }
+  .grid-card-footer__price {
+    margin: 0;
+  }
+  .grid-card-footer__button {
+    margin: 0;
+  }
+}
 .footer {
   padding-top: 50px;
   padding-bottom: 36px;
