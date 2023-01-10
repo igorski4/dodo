@@ -323,7 +323,7 @@ html {
 }
 .new-products__anchor {
   position: absolute;
-  top: 192px;
+  top: 162px;
 }
 
 .list__item {
@@ -360,7 +360,7 @@ html {
 
 @media (max-width: 552px) {
   .new-products {
-    padding-bottom: 30px;
+    padding-bottom: 17px;
   }
   .new-products__title {
     margin-bottom: 10px;
@@ -397,7 +397,6 @@ html {
     top: 0;
     visibility: visible;
     height: 56px;
-    margin-top: 17px;
     margin-bottom: 8px;
     overflow-x: scroll;
   }
