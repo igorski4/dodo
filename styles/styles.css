@@ -318,6 +318,12 @@ html {
 .new-products__list::-webkit-scrollbar {
   display: none;
 }
+.new-products__anchor {
+  position: absolute;
+  display: block;
+  background-color: black;
+  top: 423px;
+}
 
 .list__item {
   width: 250px;
