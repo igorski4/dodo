@@ -302,6 +302,9 @@ html {
     padding-bottom: 20px;
   }
 }
+.new-products {
+  position: relative;
+}
 .new-products__title {
   margin-bottom: 30px;
   font-weight: 700;
@@ -320,9 +323,7 @@ html {
 }
 .new-products__anchor {
   position: absolute;
-  display: block;
-  background-color: black;
-  top: 423px;
+  top: 192px;
 }
 
 .list__item {
