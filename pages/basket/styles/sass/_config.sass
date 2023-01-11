@@ -1,0 +1,121 @@
+* 
+  box-sizing: border-box
+
+html
+  scroll-behavior: smooth
+
+.container 
+  width: 780px
+  margin: 0 auto
+  margin-top: 50px
+  padding: 40px
+
+  font-family: "Nunito", "Open Sans", sans-serif
+  color: #000000
+  background: #FFFFFF
+  outline: 1px solid black
+  &__number-of-order
+    margin-bottom: 5px
+
+    font-weight: 400
+    font-size: 16px
+    line-height: 22px
+    color: #73798C
+  &__condition
+    display: flex
+    justify-content: space-between
+    margin-bottom: 31px
+
+    font-weight: 600
+    font-size: 36px
+    line-height: 49px
+  &__line
+    margin-bottom: 9px
+
+    height: 4px
+    background: #E2E2E9
+    border-radius: 2px
+    border: none
+  &__address
+    display: inline-block
+    margin-bottom: 70px
+
+    font-weight: 400
+    font-size: 16px
+    line-height: 22px
+    color: #000000
+  &__address_bold
+    font-weight: 600
+  &__btn
+    display: flex
+    justify-content: space-between
+
+    font-weight: 600
+    font-size: 16px
+    line-height: 22px
+    text-align: center
+
+.btn
+  &__cancel
+    width: 160px
+    height: 48px
+
+    border-radius: 1000px
+    color: #D15700
+    background: #FFF0E6
+  &__cancel:hover
+    color: #D55406
+    background: #FFD0B2
+  &__cancel:active
+    opacity: 0.6
+  &__menu
+    width: 190px
+    height: 48px
+
+    border-radius: 1000px
+    color: #FFFFFF
+    background: #F96900
+  &__menu:hover
+    background: #ED5D08
+  &__menu:active
+    color: #fcbc8e
+    background: #F96900
+
+@media (max-width: 780px)
+  .container
+    width: 320px
+    padding: 16px
+    &__number-of-order
+      margin-bottom: 4px
+
+      font-size: 12px
+      line-height: 14px
+      color: #72788B
+    &__condition
+      display: block
+      margin-bottom: 12px
+
+      font-size: 24px
+      line-height: 33px
+    &__line
+      display: none
+    &__address
+      display: block
+      padding: 18px 21px 18px 20px
+      background: #F3F3F7
+      border-radius: 10px
+    &__address_bold
+      display: block
+      margin-bottom: 4px
+    &__btn
+      flex-direction: column
+
+  .condition
+    &__time
+      display: none
+
+  .btn
+    &__cancel, &__menu
+      width: 100%
+    &__cancel
+      margin-bottom: 10px

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>Product card</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container__wrap">
+        <div class="container__img">
+          <img
+            class=""
+            srcset="./images/image.jpg 1x, ./images/image-2x.jpg 2x"
+            alt="Pizza photo"
+          />
+        </div>
+        <div class="container__content content">
+          <h1 class="content__title">Чиззи чеддер</h1>
+          <p class="content__desc">30 см, традиционное тесто, 480 г</p>
+          <form class="content__change-size change-size">
+            <label id="change-size__label" for="size-1">
+              <input
+                class="change-size__radio"
+                type="radio"
+                name="size"
+                id="size-1"
+              />
+              <span class="change-size__text">Маленькая</span>
+            </label>
+            <label id="change-size__label" for="size-2">
+              <input
+                class="change-size__radio"
+                type="radio"
+                name="size"
+                id="size-2"
+              />
+              <span class="change-size__text">Средняя</span>
+            </label>
+            <label id="change-size__label" for="size-3">
+              <input
+                class="change-size__radio"
+                type="radio"
+                name="size"
+                id="size-3"
+              />
+              <span class="change-size__text">Большая</span>
+            </label>
+          </form>
+          <form class="content__change-type change-type">
+            <label id="change-type__label" for="type-1">
+              <input
+                class="change-type__radio"
+                type="radio"
+                name="type"
+                id="type-1"
+              />
+              <span class="change-type__text">Традиционное</span>
+            </label>
+            <label id="change-type__label" for="type-2">
+              <input
+                class="change-type__radio"
+                type="radio"
+                name="type"
+                id="type-2"
+              />
+              <span class="change-type__text">Тонкое</span>
+          </form>
+          <div class="content__addition addition">
+            <h2 class="addition__title" >Добавить в пиццу</h2>
+            <div class="addition__grid-wrapper grid-wrapper">
+              <!-- Cheese side -->
+              <div class="grid-wrapper__grid-item grid-item">
+                <img class="grid-item__img" srcset="./images/add-1.jpg 1x, ./images/add-1-2x.jpg 2x" alt="Cheese side">
+                <p class="grid-item__title">Сырный бортик</p>
+                <p class="grid-item__price">599 ₽</p>
+              </div>
+              <!-- Champignons -->
+              <div class="grid-wrapper__grid-item grid-item">
+                <img class="grid-item__img" srcset="./images/add-2.jpg 1x, ./images/add-2-2x.jpg 2x" alt="Champignons">
+                <p class="grid-item__title">Шампиньоны</p>
+                <p class="grid-item__price">39 ₽</p>
+              </div>
+              <!-- Chicken -->
+              <div class="grid-wrapper__grid-item grid-item">
+                <img class="grid-item__img" srcset="./images/add-3.jpg 1x, ./images/add-3-2x.jpg 2x" alt="Chicken">
+                <p class="grid-item__title">Цыпленок</p>
+                <p class="grid-item__price">59 ₽</p>
+              </div>
+              <!-- Cubes of cheese -->
+              <div class="grid-wrapper__grid-item grid-item">
+                <img class="grid-item__img" srcset="./images/add-4.jpg 1x, ./images/add-4-2x.jpg 2x" alt="Cubes of cheese">
+                <p class="grid-item__title">Кубики брынзы</p>
+                <p class="grid-item__price">79 ₽</p>
+              </div>
+              <!-- Spicy jalapeno -->
+              <div class="grid-wrapper__grid-item grid-item">
+                <img class="grid-item__img" srcset="./images/add-5.jpg 1x, ./images/add-5-2x.jpg 2x" alt="Spicy jalapeno">
+                <p class="grid-item__title">Острый халапеньо</p>
+                <p class="grid-item__price">59 ₽</p>
+              </div>
+              <!-- Buzhenina -->
+              <div class="grid-wrapper__grid-item grid-item">
+                <img class="grid-item__img" srcset="./images/add-6.jpg 1x, ./images/add-6-2x.jpg 2x" alt="Buzhenina">
+                <p class="grid-item__title">Буженина</p>
+                <p class="grid-item__price">179 ₽</p>
+              </div>
+            </div>
+          </div>
+          <button class="content__btn">Добавить в корзину за 625 ₽</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
